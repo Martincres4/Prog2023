@@ -12,7 +12,7 @@ package tridimensionales;
 
 public class tridimensionales {
     public static void main(String[] args) {
-    int [][][] galaxia = [10][10][10]]
+    int [][][] galaxia = new int[10][10][10];
     
     }    
 }
