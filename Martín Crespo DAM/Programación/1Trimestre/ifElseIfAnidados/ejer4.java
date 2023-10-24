@@ -1,9 +1,7 @@
 /*Pide un numero, si es par, debera sumarle 10(de lo contrario sumar 1), si es mayor que 
 500, le restara 10, ademas  si es divisible entre 5 multiplicarlo por 3*/
 package ifElseIfAnidados;
-
 import java.util.Scanner;
-
 public class ejer4 {
     public static void main(String[] args) {
         boolean par = false;
@@ -17,8 +15,6 @@ public class ejer4 {
         numS = sc.nextLine();
         num = Integer.parseInt(numS);
         
-        
-
         if (num % 2 == 0) {
             par = true;
         }
