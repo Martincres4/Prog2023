@@ -1,4 +1,5 @@
-/*Calcular el factorial */
+/*Calcular el factorial. multiplicar todos los números enteros positivos que hay
+ entre ese número y el 1 */
 package bucles;
 import java.util.Scanner;
 public class ej9 {

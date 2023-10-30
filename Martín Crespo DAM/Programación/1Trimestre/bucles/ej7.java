@@ -8,11 +8,8 @@ public class ej7 {
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce una palabra: ");
         String palabra = sc.nextLine();
-        for(int i = 0; i>palabra.length();i--){
-            
-            
-        
-        
+        for(int i = palabra.length(); i<0;i--){
+            System.out.println(palabra.charAt(i));    
         }
     }
 }

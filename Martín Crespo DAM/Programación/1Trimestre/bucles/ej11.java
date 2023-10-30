@@ -4,16 +4,22 @@ package bucles;
 import java.util.Scanner;
 public class ej11 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Introduce un número entero");
-        int num = sc.nextInt();
-        if(num){
-            System.out.println("El número es primo.");
-        }else{
-            System.out.println("El número no es primo");
+        Scanner scanner = new Scanner(System.in);
+        boolean primo= true;
+
+        System.out.print("Ingresa un número entero: ");
+        int numero = scanner.nextInt();
+
+        for (int i = 2;numero >= i * i; i++) {
+            if (numero % i == 0) {
+                primo = false;
+            }
         }
-    
-
-
+        if (primo) {
+            System.out.println(numero + " es un número primo.");
+        } else {
+            System.out.println(numero + " no es un número primo.");
+        }
+        
     }
 }

@@ -5,28 +5,22 @@ package bucles;
 import java.util.Scanner;
 public class ej8 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Introduce una frase: ");
-        String frase = sc.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        int contador = 0;
 
-        System.out.println("Introduce una letra: ");
-        String letra = sc.nextLine();
+        System.out.print("Ingresa una frase: ");
+        String frase = scanner.nextLine();
 
-        int veces=0;
-
-
-        for(int i = 0; i<frase.length();i++){
-            if(){
-                
+        System.out.print("Ingresa una letra: ");
+        char letra = scanner.next().charAt(0);
+        
+        for (int i = 0; i < frase.length(); i++) {
+            if (frase.charAt(i) == letra) {
+                contador++;
             }
-            
-        
-        
         }
-        System.out.println("La letra " + letra + " aparece " + veces + " veces.");
 
-    
-    
+        System.out.println("La letra '" + letra + "' aparece " + contador + " veces en la frase.");
     }
-    
+   
 }

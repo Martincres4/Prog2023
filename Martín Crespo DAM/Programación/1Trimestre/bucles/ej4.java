@@ -11,7 +11,11 @@ public class ej4 {
         String numS = sc.nextLine();
         int num = Integer.parseInt(numS);
         while(num>-1){
-           System.out.printf(num+",");
+            if(num!=0){
+            System.out.printf(num+",");
+            }else{
+                System.out.print(num);
+            }
             num--;          
         }  
     }    
