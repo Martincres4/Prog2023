@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class ej2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Introducetu edad");
+        System.out.println("Introducetu edad: \n");
         String edadS = sc.nextLine();
         int edad = Integer.parseInt(edadS);
-        for(int i =1; i<edad;i++){
+        for(int i =1; i<=edad;i++){
             System.out.println(i);
         }  
     }    

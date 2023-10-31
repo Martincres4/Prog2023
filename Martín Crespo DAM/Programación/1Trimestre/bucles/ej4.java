@@ -6,17 +6,17 @@ import java.util.Scanner;
 public class ej4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int i = 1;
+
         System.out.println("Introduce un número entero positivo");
         String numS = sc.nextLine();
         int num = Integer.parseInt(numS);
-        while(num>-1){
+        
+        for(int i=1;num>=0;num--){
             if(num!=0){
-            System.out.printf(num+",");
+                System.out.printf(num+",");
             }else{
                 System.out.print(num);
-            }
-            num--;          
+            }         
         }  
     }    
 } 

@@ -16,6 +16,14 @@ public class ej5 {
                 System.out.printf("*");
             }
         }
+        
+            
+            String cadena = sc.nextLine();
+            int numero = Integer.parseInt(cadena);
+            String aux="";
+            for(int x=1;x<=numero;x++){
+                System.out.println(aux);
+            }
          
-    }    
-} 
+    }  
+}
