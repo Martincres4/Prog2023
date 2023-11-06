@@ -20,8 +20,11 @@ public class ej5 {
             
             String cadena = sc.nextLine();
             int numero = Integer.parseInt(cadena);
+            int aux2=-1;
             String aux="";
             for(int x=1;x<=numero;x++){
+                aux2+=2;
+                aux=+aux2+" ".concat(aux);
                 System.out.println(aux);
             }
          

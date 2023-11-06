@@ -23,6 +23,11 @@ public class ej6 {
             }
             System.out.println();
         }
+
+        String cadena = scanner.nextLine();
+        for(int x = cadena.length();x>0;x--){
+            System.out.println(cadena.charAt(x-1));
+        }
     }
 } 
 
