@@ -4,93 +4,94 @@ public class practica1MartinCrespo {
 
     static String[][] inventario = new String[15][6];
     static String[][] usuarios = {
-        { "admin", "admin123", "admin" },
-        { "usuario1", "pass1", "cliente" },
-        { "usuario2", "pass2", "cliente" },
-        { "usuario3", "pass3", "cliente" },
-        { "usuario4", "pass4", "cliente" },
-        { "usuario5", "pass5", "cliente" }
-};
-    static String usuarioActual;
-    static boolean controlParentalActivado = true;
+            { "admin", "admin", "admin" },
+            { "usuario1", "usu1", "cliente" },
+            { "usuario2", "usu2", "cliente" },
+            { "usuario3", "usu3", "cliente" },
+            { "usuario4", "usu4", "cliente" },
+            { "usuario5", "usu5", "cliente" }
+    };
+
+    static boolean contParAct = true;
 
     public static void main(String[] args) {
         iniciarSesion();
-         cargarDatosDeEjemplo();
-        ejecutarMenuPrincipal();
-    }   
-      
+        cargarDatos();
+        ejecMenu();
+    }
 
     static void iniciarSesion() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese su usuario: ");
-        usuarioActual = scanner.nextLine();
-        System.out.print("Ingrese su contraseña: ");
-        String contrasena = scanner.nextLine();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Usuario: ");
+        String usuarioA = sc.nextLine();
+        System.out.print("Contraseña: ");
+        String contrasenaA = sc.nextLine();
 
         // Verificar credenciales
-        boolean credencialesValidas = false;
+        boolean correcto = false;
         for (String[] usuario : usuarios) {
-            if (usuario[0].equals(usuarioActual) && usuario[1].equals(contrasena)) {
-                System.out.println("¡Bienvenido, " + usuarioActual + "!");
-                credencialesValidas = true;
+            if (usuario[0].equals(usuarioA) && usuario[1].equals(contrasenaA)) {
+                System.out.println("Saludos " + usuarioA + ".");
+                correcto = true;
                 break;
             }
         }
 
-        if (!credencialesValidas) {
-            System.out.println("Credenciales incorrectas. Saliendo del programa.");
+        if (!correcto) {
+            System.out.println("Credenciales incorrectas.");
             System.exit(0);
         }
     }
 
-    static void ejecutarMenuPrincipal() {
-        Scanner scanner = new Scanner(System.in);
-        int opcion;
+    static void ejecMenu() {
+        Scanner sc = new Scanner(System.in);
+        int opcionM;
         do {
-            System.out.println("------ Menú Principal ------");
-            System.out.println("1. Consultar documento");
-            System.out.println("2. Visualizar todos los documentos");
-            System.out.println("3. Reservar documento");
-            System.out.println("4. Devolver documento");
-            System.out.println("5. Salir");
-            System.out.print("Seleccione una opción: ");
-            opcion = scanner.nextInt();
-            scanner.nextLine(); // Consumir el salto de línea
+            System.out.println("########################################");
+            System.out.println("# Menú Principal                       #");
+            System.out.println("# 1. Consultar documento               #");
+            System.out.println("# 2. Visualizar todos los documentos   #");
+            System.out.println("# 3. Reservar documento                #");
+            System.out.println("# 4. Devolver documento                #");
+            System.out.println("# 5. Salir                             #");
+            System.out.print("# Seleccione una opción:               #");
+            System.out.println("########################################");
+            opcionM = sc.nextInt();
+            sc.nextLine(); // Consumir el salto de línea
 
-            switch (opcion) {
+            switch (opcionM) {
                 case 1:
-                    consultarDocumento();
+                    consultarDoc();
                     break;
                 case 2:
-                    visualizarDocumentos();
+                    visualizarDoc();
                     break;
                 case 3:
-                    reservarDocumento();
+                    reservarDoc();
                     break;
                 case 4:
-                    devolverDocumento();
+                    devolverDoc();
                     break;
                 case 5:
-                    System.out.println("¡Hasta luego!");
+                    System.out.println("Saliendo...");
                     break;
                 default:
                     System.out.println("Opción no válida. Inténtelo de nuevo.");
             }
-        } while (opcion != 5);
+        } while (opcionM != 5);
     }
 
-    static void consultarDocumento() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese el nombre del documento a consultar: ");
-        String nombreDocumento = scanner.nextLine();
+    static void consultarDoc() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("¿Qué documento quiere consultar?");
+        String nombreDoc = sc.nextLine();
 
         for (int i = 0; i < inventario.length; i++) {
-            String[] documento = inventario[i];
-            if (documento != null && documento[0] != null && documento[0].equalsIgnoreCase(nombreDocumento)) {
-                // Logica para consultar el documento
+            String[] doc = inventario[i];
+            if (doc != null && doc[0] != null && doc[0].equalsIgnoreCase(nombreDoc)) {
+                // consultar el documento
                 System.out.println("Información del documento: ");
-                for (String atributo : documento) {
+                for (String atributo : doc) {
                     System.out.println(atributo);
                 }
                 return;
@@ -99,12 +100,14 @@ public class practica1MartinCrespo {
         System.out.println("Documento no encontrado.");
     }
 
-    static void visualizarDocumentos() {
-        System.out.println("------ Todos los Documentos ------");
-        for (String[] documento : inventario) {
-            if (documento != null && documento[0] != null) {
-                // Imprime la información del documento
-                for (String atributo : documento) {
+    static void visualizarDoc() {
+        System.out.println("Todos los Documentos:");
+        for (int j = 0; j < inventario.length; j++) {
+            String[] doc = inventario[j];
+            if (doc != null && doc[0] != null) {
+                // Imprime información del doc
+                for (int i = 0; i < doc.length; i++) {
+                    String atributo = doc[i];
                     System.out.print(atributo + "\t");
                 }
                 System.out.println();
@@ -112,39 +115,39 @@ public class practica1MartinCrespo {
         }
     }
 
-    static void reservarDocumento() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese el nombre del documento a reservar: ");
-        String nombreDocumento = scanner.nextLine();
+    static void reservarDoc() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("¿Qué documento quiere  reservar?");
+        String nombreDoc = sc.nextLine();
 
         for (int i = 0; i < inventario.length; i++) {
-            String[] documento = inventario[i];
-            if (documento != null && documento[0] != null && documento[0].equalsIgnoreCase(nombreDocumento)) {
+            String[] doc = inventario[i];
+            if (doc != null && doc[0] != null && doc[0].equalsIgnoreCase(nombreDoc)) {
                 // Logica para reservar el documento
-                if (documento[5].equalsIgnoreCase("disponible")) {
-                    documento[5] = "reservado";
-                    System.out.println("Documento reservado con éxito.");
+                if (doc[5].equalsIgnoreCase("disponible")) {
+                    doc[5] = "reservado";
+                    System.out.println("Ha reservvvado el documento.");
                 } else {
-                    System.out.println("El documento no está disponible para reservar.");
+                    System.out.println("No disponible.");
                 }
                 return;
             }
         }
 
-        System.out.println("Documento no encontrado.");
+        System.out.println("No encontrado.");
     }
 
-    static void devolverDocumento() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese el nombre del documento a devolver: ");
-        String nombreDocumento = scanner.nextLine();
+    static void devolverDoc() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("¿Qué documento quiere  devolver?");
+        String nombreDoc = sc.nextLine();
 
         for (int i = 0; i < inventario.length; i++) {
-            String[] documento = inventario[i];
-            if (documento != null && documento[0] != null && documento[0].equalsIgnoreCase(nombreDocumento)) {
+            String[] doc = inventario[i];
+            if (doc != null && doc[0] != null && doc[0].equalsIgnoreCase(nombreDoc)) {
                 // Logica para devolver el documento
-                if (documento[5].equalsIgnoreCase("reservado")) {
-                    documento[5] = "disponible";
+                if (doc[5].equalsIgnoreCase("reservado")) {
+                    doc[5] = "disponible";
                     System.out.println("Documento devuelto con éxito.");
                 } else {
                     System.out.println("El documento no está reservado.");
@@ -157,18 +160,20 @@ public class practica1MartinCrespo {
     }
 
     static void configuracion() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("------ Configuración ------");
-        System.out.println("1. Activar/Desactivar control parental");
-        System.out.println("2. Volver al Menú Principal");
-        System.out.print("Seleccione una opción: ");
-        int opcion = scanner.nextInt();
-        scanner.nextLine(); // Consumir el salto de línea
+        Scanner sc = new Scanner(System.in);
+        System.out.println("###########################################");
+        System.out.println("# Configuración                           #");
+        System.out.println("# 1. Activar/Desactivar control parental  #");
+        System.out.println("# 2. Volver al Menú Principal             #");
+        System.out.print ("# Seleccione una opción:                   # ");
+        System.out.println("###########################################");
+        int opcionCP = sc.nextInt();
+        sc.nextLine();
 
-        switch (opcion) {
+        switch (opcionCP) {
             case 1:
-                controlParentalActivado = !controlParentalActivado;
-                System.out.println("Control parental " + (controlParentalActivado ? "activado." : "desactivado."));
+                contParAct = !contParAct;
+                System.out.println("Control parental " + (contParAct ? "activado." : "desactivado."));
                 break;
             case 2:
                 System.out.println("Volviendo al Menú Principal.");
@@ -177,27 +182,27 @@ public class practica1MartinCrespo {
                 System.out.println("Opción no válida. Inténtelo de nuevo.");
         }
     }
-    static void cargarDatosDeEjemplo() {
-        // Ejemplos de libros
-        inventario[0] = new String[]{"Libro 1", "Autor 1", "Editorial 1", "1", "300", "disponible"};
-        inventario[1] = new String[]{"Libro 2", "Autor 2", "Editorial 2", "2", "400", "disponible"};
-        inventario[2] = new String[]{"Libro 3", "Autor 3", "Editorial 3", "3", "250", "disponible"};
-        inventario[3] = new String[]{"Libro 4", "Autor 4", "Editorial 4", "1", "500", "disponible"};
-        inventario[4] = new String[]{"Libro 5", "Autor 5", "Editorial 5", "2", "450", "disponible"};
 
-        // Ejemplos de revistas
-        inventario[5] = new String[]{"Revista 1", "Autor Revista 1", "Editorial Revista 1", "123", "disponible"};
-        inventario[6] = new String[]{"Revista 2", "Autor Revista 2", "Editorial Revista 2", "124", "disponible"};
-        inventario[7] = new String[]{"Revista 3", "Autor Revista 3", "Editorial Revista 3", "125", "disponible"};
-        inventario[8] = new String[]{"Revista 4", "Autor Revista 4", "Editorial Revista 4", "126", "disponible"};
-        inventario[9] = new String[]{"Revista 5", "Autor Revista 5", "Editorial Revista 5", "127", "disponible"};
-
-        // Ejemplos de documentos
-        inventario[10] = new String[]{"2023-11-20", "Documento 1", "Editor 1", "Author 1", "disponible"};
-        inventario[11] = new String[]{"2023-11-21", "Documento 2", "Editor 2", "Author 2", "disponible"};
-        inventario[12] = new String[]{"2023-11-22", "Documento 3", "Editor 3", "Author 3", "disponible"};
-        inventario[13] = new String[]{"2023-11-23", "Documento 4", "Editor 4", "Author 4", "disponible"};
-        inventario[14] = new String[]{"2023-11-24", "Documento 5", "Editor 5", "Author 5", "disponible"};
+    static void cargarDatos() {
+        //libros
+        inventario[0] = new String[] { "The Great Gatsby", "F. Scott Fitzgerald", "Scribner", "1", "180", "disponible" };
+        inventario[1] = new String[] { "To Kill a Mockingbird", "Harper Lee", "Harper Perennial", "2", "336", "disponible" };
+        inventario[2] = new String[] { "The Catcher in the Rye", "J.D. Salinger", "Little, Brown and Company", "3", "224", "disponible" };
+        inventario[3] = new String[] { "1984", "George Orwell", "Penguin Books", "1", "328", "disponible" };
+        inventario[4] = new String[] { "The Hobbit", "J.R.R. Tolkien", "Houghton Mifflin Harcourt", "2", "310", "disponible" };
+    
+        //revistas
+        inventario[5] = new String[] { "National Geographic", "National Geographic Society", "123", "disponible" };
+        inventario[6] = new String[] { "Time", "Time Inc.", "124", "disponible" };
+        inventario[7] = new String[] { "Scientific American", "Springer Nature", "125", "disponible" };
+        inventario[8] = new String[] { "Vogue", "Condé Nast", "126", "disponible" };
+        inventario[9] = new String[] { "The Economist", "The Economist Group", "127", "disponible" };
+    
+        //doc
+        inventario[10] = new String[] { "2023-11-20", "Research Report", "Researcher 1", "Author 1", "disponible" };
+        inventario[11] = new String[] { "2023-11-21", "User Manual", "Company XYZ", "Author 2", "disponible" };
+        inventario[12] = new String[] { "2023-11-22", "Service Agreement", "Client ABC", "Author 3", "disponible" };
+        inventario[13] = new String[] { "2023-11-23", "Presentation", "Sales Team", "Author 4", "disponible" };
+        inventario[14] = new String[] { "2023-11-24", "Privacy Policy", "Company DEF", "Author 5", "disponible" };
     }
 }
-
