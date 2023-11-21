@@ -1,6 +1,6 @@
 //crea una funcion que muestre por pantalla todos los valores de un array de dos 
 //dimensiones
-package arraysMultidimensionales;
+package arraysMult;
 import java.util.Scanner;
 public class ej1ArraysMultidimensionales2 {
     public static void main(String[] args){

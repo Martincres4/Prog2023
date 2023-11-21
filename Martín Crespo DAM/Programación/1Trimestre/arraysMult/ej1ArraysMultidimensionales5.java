@@ -1,5 +1,5 @@
 //crea una funcion que dado un array de 4 dimensiones, muestra todo su contenido
-package arraysMultidimensionales;
+package arraysMult;
 import java.util.Scanner;
 public class ej1ArraysMultidimensionales5 {
     public static void main(String[] args){

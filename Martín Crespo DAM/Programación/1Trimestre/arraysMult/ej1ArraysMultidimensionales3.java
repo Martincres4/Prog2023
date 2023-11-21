@@ -1,6 +1,6 @@
 //crea un método que devuelva la posicion del primero 0 que encuentre en un array 
 //de dos dimensiones
-package arraysMultidimensionales;
+package arraysMult;
 
 public class ej1ArraysMultidimensionales3 {
     public static void main(String[] args){

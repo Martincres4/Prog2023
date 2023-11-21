@@ -1,5 +1,5 @@
 //crea una funcion que dado un array de 4 dimensiones, devuelva si en su contenido hay un par
-package arraysMultidimensionales;
+package arraysMult;
 import java.util.Scanner;
 public class ej1ArraysMultidimensionales6 {
      public static void main(String[] args){

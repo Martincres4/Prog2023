@@ -1,6 +1,6 @@
 //crea un método que instancie un array de dos dimensiones , 
 //cuyo tamaño esta dado por el usuario y sus valores sean aleatorios(entre -23 y +509)
-package arraysMultidimensionales;
+package arraysMult;
 import java.util.Scanner;
 public class ej1ArraysMultidimensionales1 {
     public static void main(String[] args){
