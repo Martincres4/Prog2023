@@ -93,6 +93,13 @@ static void ejecMenu() {
         System.out.println("# 2. Visualizar todos los documentos        #");
         System.out.println("# 3. Reservar documento                     #");
         System.out.println("# 4. Devolver documento                     #");
+        if(usuarios[0][0]){
+            System.out.println("# 5. Introducir un nuevo documento          #");
+            System.out.println("# 6. Salir                                  #");
+        }else{
+            System.out.println("# 5. Salir                                  #");
+        }
+        System.out.println("# 4. Introducir un nuevo documento          #");
         System.out.println("# 5. Salir                                  #");
         System.out.println("#############################################");
         opcionM = sc.nextInt();
@@ -149,7 +156,7 @@ static void ejecMenu() {
                                 visualizarArticulo();
                                 break;
                             case 4:
-                                ;
+                                mos;
                                 break;
                             default:
                                 System.out.println("Opción no válida. Inténtelo de nuevo.");
@@ -204,7 +211,9 @@ static void ejecMenu() {
                                 devolverArticulo();
                                 break;
                             case 4:
-                                devolverDoc();
+                                devolverLibro();
+                                devolverRevista();
+                                devolverArticulo();
                                 break;
                             default:
                                 System.out.println("Opción no válida. Inténtelo de nuevo.");
@@ -493,6 +502,11 @@ static void configuracion() {
 
 
 
+
+
+
+
+
 //🡣...🡣...🡣...🡣...🡣...🡣...   F  I  L  T  R  A  D  O   🡣...🡣...🡣...🡣...🡣...🡣... 
     //me tienen que indicar campo/columna y tengo que buscar fila a fila
     static void filtrado_libros_opciones() {
@@ -652,6 +666,8 @@ static void configuracion() {
 
         }
     }
+
+
 
 //🡣...🡣...  DATOS DEMO  ...🡣...🡣 
     static String[][] datos_libros_demo() {
