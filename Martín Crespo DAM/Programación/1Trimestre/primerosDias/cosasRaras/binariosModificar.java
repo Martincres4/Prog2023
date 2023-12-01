@@ -19,6 +19,8 @@ public class binariosModificar {
         int tusmuertos5 = 0010;
         int tusmuertos6 = 1101;
 
+        System.out.println(num4 + " " +  (num4<<1) + " " + (num4<<2) + " " + (num4<<3) + " " + (num4>>1) +  " " + (num4>>2) + " " + (num1>>3));
+
         System.out.println((num1<<2) + " " + (num2<<1) + " " + (num3<<2) + " " + (num4<<1) + " " + (num5<<2) + " "+ (num6<<1) + " " + (num7<<2) + " " + (num8<<1));
         
         System.out.println((num1>>2) + " " + (num2>>1) + " " + (num3>>2) + " " + (num4>>1) + " " + (num5>>2) + " "+ (num6>>1) + " " + (num7>>2) + " " + (num8>>1));

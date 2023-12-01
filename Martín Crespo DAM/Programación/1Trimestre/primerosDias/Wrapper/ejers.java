@@ -24,9 +24,7 @@ public class ejers {
         // Comparar si "234" es igual a "234" usando wrappers
         String num1="234";
         String num2="234";
-        int res1 = Integer.valueOf(num1);
-        int res2 = Integer.valueOf(num2);
-        String resul = res1 == res2 ? "Son iguales" : "No son iguales";
+        String resul = num1.equalsIgnoreCase(num2) ? "Son iguales" : "No son iguales";
         System.out.println(resul);
 
         // Comparar si "234" es mayora a "224" usando wrappers
