@@ -1,4 +1,5 @@
-/*Escribe un programa pida por pantalla un numero y muestre el numero si es negativo, le sume 500 si es positivo y le reste 12 si vale cero. */
+/*Escribe un programa pida por pantalla un numero y muestre el numero si es negativo, 0
+le sume 500 si es positivo y le reste 12 si vale cero. */
 package condicionales.ejersIfElse;
 import java.util.Scanner;
 public class condicionales3 {

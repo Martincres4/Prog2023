@@ -4,13 +4,12 @@ package condicionales.ejersIfElse;
 import java.util.Scanner;
 public class condicionales1 {
     public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
         String entradaXCuadrado, entradaX, entradaResto;
         double opXCuadrado, opX, resto, raiz, res1, res2;
         
         // ecuaciones de segundo grado, formula: (-b±√(b²-4ac))/(2a)
-        System.out.println(
-                "Calculadora para ecuaciones de segundo grado.\nEcuacion: ax^2+bx+c=0\nA continuacion ingrese los valores");
-        Scanner entrada = new Scanner(System.in);
+        System.out.println("Calculadora para ecuaciones de segundo grado.\nEcuacion: ax^2+bx+c=0\nA continuacion ingrese los valores");
 
         System.out.print("Ingrese un valor para a : ");
         entradaXCuadrado = entrada.nextLine();

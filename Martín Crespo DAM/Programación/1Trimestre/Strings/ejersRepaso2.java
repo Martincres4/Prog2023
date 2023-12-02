@@ -9,8 +9,8 @@ public class ejersRepaso2 {
 
         //* */
         System.out.println("\nPrograma que analice dos cadenas, si son del mismo tamaño, concatenalas en la primera cadena, se mantiene igual");
-        String cadena1 = "Longitud variable discontinua";
-        String cadena2 = " Longitud variable discontinua";
+        String cadena1 = "Longitud variable discontinua 1 ";
+        String cadena2 = "Longitud variable discontinua 2 ";
         String iguales = (cadena1.length() == cadena2.length()) ? cadena1.concat(cadena2) : "no lo son";
         System.out.println(iguales);
 
