@@ -51,6 +51,8 @@ public class Prints {
         System.out.printf("Inicio %05d %-5d Fin\n", 10, 10);
         System.out.printf("Inicio %015.2f %-5.2f Fin\n", 1.2, 1.2);
         System.out.printf("Inicio %15s %-15s Fin\n", "Hola", "Hola");
+        System.out.println("\n\n");
+        ejercicioPrintf();;
 
 
 
@@ -82,21 +84,21 @@ public class Prints {
         float altura = sc.nextInt();
         System.out.printf("El area del rectangulo de %f de base y %f altura sería %f",base,altura,base*altura);
     }
-    public static void ejercicio02_03X_01CombinaPrintf(){
+    public static void ejercicioCombinaPrintf(){
         /*Hacer un programa que muestre no menos de 20 líneas diferentes con diferentes combinaciones de printf.
         Utilizar combinaciones de todos los posibles valores de la cadena de formato.
         Prescindir generalmente del índice del argumento. No resulta demasiado interesante.
         */ 
 
     }
-    public static void ejercicio02_03X_02MisDatos(){
+    public static void ejercicioMisDatos(){
         /*Hacer un programa que muestre con sucesivos printf tus datos personales.
         Poner atención ya que cada dato será de un tipo diferente.
         Cuantos más muestres será mejor.
         */
 
     }
-    public static void ejercicio02_03X_05printf (){
+    public static void ejercicioPrintf (){
         /*Escribir las lineas de código Java necesarias para obtener la siguiente salida por pantalla utilizando sentencias printf para cada linea de salida con el
         formato adecuado en cada caso.
         //Ejemplo de printf
@@ -105,6 +107,13 @@ public class Prints {
         13/3 = 04.33333
         1234.1234 = 1.23e3
  */
+        System.out.printf("%.3f es mayor que %.4f",10.001, 10.0001);
+        System.out.println();
+        System.out.printf("%d (decimal) es %x (hexadecimal) y %o (octal)",16,16,16);
+        System.out.println();
+        System.out.printf("%d/%d = %f0.5", 13,3,(double)13/3);
+        System.out.println();
+        System.out.printf("%.4f = %.2e%n",1234.1234,1234.1234);
 
     }
     
