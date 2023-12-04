@@ -95,11 +95,30 @@ public class ej1 {
         // Convertir la cadena "12" en byte
         String Cad = "12";
         byte byteCad = Byte.valueOf(Cad);
+        byteCad = Byte.parseByte(Cad);
         System.out.println(byteCad);
 
         // Converit la cadena "12.2" en float
+        String Cad2 = "12.2";
+        float floatCad = Float.valueOf(Cad2);
+        floatCad = Float.parseFloat(Cad2);
+        System.out.println(floatCad);
+
         // Convertir la cadena "H" en char
+        String x = "H";
+        char y = x.charAt(0);
+
         // Comparar si "234" es igual a "234" usando wrappers
+        String num1S = "234";
+        String num2S = "234";
+        int num1 = Integer.valueOf(num1S);
+        int num2 = Integer.parseInt(num2S);
+        boolean mayor = num1 ==  num2;
+        if(mayor){
+            System.out.println("Si");
+        }
+
+
         // Comparar si "234" es mayora a "224" usando wrappers
 
         // Extras:
@@ -107,6 +126,22 @@ public class ej1 {
         // hacer?
         // convertir la cadena "21312.324f" en float(se puede?¿) -> ¿que podrias hacer?
         // Convertir la cadena "Hi" en char (se puede?¿) -> ¿que podrias hacer?
+        
 
+    }
+    public static boolean primoONo(int number){
+
+        int sqrt = (int) Math.round(Math.sqrt(number));
+        boolean esPrimo = true;
+
+        if(number == 1) esPrimo = false;
+
+        for(int i = 2; i <= sqrt; i++){
+            if(number % i == 0){
+                esPrimo = false;
+            }
+        }
+
+        return esPrimo;
     }
 }

@@ -23,8 +23,9 @@ public class operacionesBasicas {
 		
 		
 		int figura = sc.nextInt();
+		do{
 		switch (figura) {
-		case 1:
+		case 1,5:
 		//cuadrado
 		System.out.println("Introduce el lado del cuandrado: ");
 		int a = sc.nextInt();
@@ -57,8 +58,9 @@ public class operacionesBasicas {
 		area2 = 4 * PI * (r * r);
 		System.out.println("El area de la esfera será: "  + area2);
 		break;
-		
 		}
+		}while(figura!=6);
+	
 	}
 
 }

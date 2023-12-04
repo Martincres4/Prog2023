@@ -15,19 +15,16 @@ public class ej6 {
         int n = scanner.nextInt();
 
         for (int i = 1; i <= n; i++) {
-            for (int j = 2 * i - 1; j >= 1; j -= 2) {
-                System.out.print(j);
-                if (j > 1) {
-                    System.out.print(" ");
-                }
+            for (int j = i * 2 - 1; j >= 1; j -= 2) {
+                System.out.print(j + (j > 1 ? " " : ""));
             }
             System.out.println();
         }
-
+/* 
         String cadena = scanner.nextLine();
         for(int x = cadena.length();x>0;x--){
             System.out.println(cadena.charAt(x-1));
-        }
+        }*/
     }
 } 
 

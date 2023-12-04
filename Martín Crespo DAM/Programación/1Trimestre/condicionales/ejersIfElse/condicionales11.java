@@ -2,7 +2,7 @@
 package condicionales.ejersIfElse;
 public class condicionales11 {
     public static void main(String[] args) {
-        int numRandom = (int) (Math.random()*(98 - 84))+84;
+        int numRandom = (int) (Math.random()*(98 - 84)+84);
         System.out.println(numRandom);
     }   
 }

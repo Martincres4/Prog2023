@@ -31,10 +31,10 @@ public class ejersRepaso2 {
         int capicua = 2992;
         String capicuaS = Integer.toString(capicua);
         String capicuaInv = "";
-             for (int indice = capicuaS.length() - 1; indice >= 0; indice--) {
-                capicuaInv += capicuaS.charAt(indice);
-            }
-            System.out.println();
+
+        for (int i = capicuaS.length() - 1; i >= 0; i--) {
+         capicuaInv += capicuaS.charAt(i);
+        }
         
         System.out.println(capicuaS.equalsIgnoreCase(capicuaInv));
         
