@@ -9,12 +9,14 @@ public class ejArraysDif3 {
         for(int i=0;i<array.length;i++){
             System.out.println(array[i]);
         }  
-        array[11]= 33;
 
-        array2 = array;
+        for(int i=0;i<array.length;i++){
+            array2[i]=array[i];
+        }
+        System.out.println("\n\n");
         for(int i=0;i<array2.length;i++){
             System.out.println(array2[i]);
-        }
+        }  
         
        
     }

@@ -21,9 +21,9 @@ public class ejersRepaso {
 
 
         System.out.println("\nPrograma que muestre la posicion en una cadena de un caracter previamente declarado");
-        String caracter = "d";
+        char caracter = 'd';
         String posicion="Son las seis del martes";
-        System.out.println(posicion.lastIndexOf(caracter, 0));
+        System.out.println(posicion.lastIndexOf(caracter));
 
 
         System.out.println("\nPrograma que extrae una cadena de una cadena mayor en base a dos posiciones dadas");

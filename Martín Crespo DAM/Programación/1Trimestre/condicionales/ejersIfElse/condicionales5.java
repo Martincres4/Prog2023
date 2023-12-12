@@ -11,7 +11,6 @@ public class condicionales5 {
             cadena += "     ";
             System.out.println(cadena);
         }else{
-            cadena = cadena;
             System.out.println(cadena);
         }
     

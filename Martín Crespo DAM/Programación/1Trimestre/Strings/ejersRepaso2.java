@@ -9,8 +9,8 @@ public class ejersRepaso2 {
 
         //* */
         System.out.println("\nPrograma que analice dos cadenas, si son del mismo tamaño, concatenalas en la primera cadena, se mantiene igual");
-        String cadena1 = "Longitud variable discontinua";
-        String cadena2 = " Longitud variable discontinua";
+        String cadena1 = "Longitud variable discontinua 1 ";
+        String cadena2 = "Longitud variable discontinua 2 ";
         String iguales = (cadena1.length() == cadena2.length()) ? cadena1.concat(cadena2) : "no lo son";
         System.out.println(iguales);
 
@@ -31,10 +31,10 @@ public class ejersRepaso2 {
         int capicua = 2992;
         String capicuaS = Integer.toString(capicua);
         String capicuaInv = "";
-             for (int indice = capicuaS.length() - 1; indice >= 0; indice--) {
-                capicuaInv += capicuaS.charAt(indice);
-            }
-            System.out.println();
+
+        for (int i = capicuaS.length() - 1; i >= 0; i--) {
+         capicuaInv += capicuaS.charAt(i);
+        }
         
         System.out.println(capicuaS.equalsIgnoreCase(capicuaInv));
         
