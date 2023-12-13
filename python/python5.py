@@ -119,3 +119,96 @@ elif car22.upper() != car23:
     print("yes")
 else: 
     print(car22 + " not campitibilibili")
+
+
+"""5-6. Stages of Life: Write an if-elif-else chain that determines a person’s
+stage of life. Set a value for the variable age, and then:
+•	 If the person is less than 2 years old, print a message that the person is
+a baby.
+•	 If the person is at least 2 years old but less than 4, print a message that
+the person is a toddler.
+•	 If the person is at least 4 years old but less than 13, print a message that
+the person is a kid.
+•	 If the person is at least 13 years old but less than 20, print a message that
+the person is a teenager.
+•	 If the person is at least 20 years old but less than 65, print a message that
+the person is an adult.
+•	 If the person is age 65 or older, print a message that the person is an
+elder."""
+person_age = 13
+if person_age < 2:
+    print("baby")
+elif person_age >= 2 and person_age < 4:
+    print("toddler")
+elif person_age >= 4 and person_age < 13:
+    print("kid")
+elif person_age >= 13 and person_age < 20:
+    print("teenager")
+elif person_age >= 20 and person_age < 65:
+    print("adult")
+elif person_age > 65:
+    print("elder")
+
+"""5-7. Favorite Fruit: Make a list of your favorite fruits, and then write a series of
+independent if statements that check for certain fruits in your list.
+•	 Make a list of your three favorite fruits and call it favorite_fruits.
+•	 Write five if statements. Each should check whether a certain kind of fruit
+is in your list. If the fruit is in your list, the if block should print a statement,
+such as You really like bananas!"""
+favorite_fruits = ['banana', 'apple', 'watermelon']
+if 'oranges' in favorite_fruits:
+    print("i love oranges")
+elif 'peach' in favorite_fruits:
+    print("i love peaches")
+elif 'banana' in favorite_fruits:
+    print("i love bananas")
+elif 'pineapple' in favorite_fruits:
+    print("i love pineapples")
+elif 'apple' in favorite_fruits:
+    print("i love apples")
+
+
+available_toppings = ['mushrooms', 'olives', 'green peppers',
+ 'pepperoni', 'pineapple', 'extra cheese']
+requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+
+for requested_topping in requested_toppings:
+    if requested_topping in available_toppings:
+        print("adding " + requested_topping)
+    else:
+        print("sorry, we haven't " + requested_topping)
+
+
+"""5-8. Hello Admin: Make a list of five or more usernames, including the name
+'admin'. Imagine you are writing code that will print a greeting to each user
+after they log in to a website. Loop through the list, and print a greeting to
+each user:
+•	 If the username is 'admin', print a special greeting, such as Hello admin,
+would you like to see a status report?
+•	 Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again."""
+
+usernames = ['manolo', 'grekas', 'admin', 'martins', 'tusmu']
+for username in usernames:
+    if username == 'admin':
+        print("Hello "+ username +", would you like to see a status report?")
+    else:
+        print("holiwi")
+
+
+"""5-9. No Users: Add an if test to hello_admin.py to make sure the list of users is
+not empty.
+•	 If the list is empty, print the message We need to find some users!
+•	 Remove all of the usernames from your list, and make sure the correct
+message is printed."""
+usernames2 = []
+if usernames2:
+    for username2 in usernames2:
+        if username2 == '1':
+            print("Necesitamos 6541")
+        else:
+            print("Necesitamos gente")
+else:
+    print("We need to find some users!")
+
+
+

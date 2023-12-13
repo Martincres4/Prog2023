@@ -3,7 +3,12 @@ public class Animal {
     private String nombre, subespecie;
     private float tamano, peso;
 
-    
+    public static void main (String[]Args){
+        Animal pato = new Animal("lala", 3, 22, "africano");
+        System.out.println(pato.toString());
+        
+
+    }
     
     public Animal(String nombre, float tamano, float peso, String subespecie){
         this.nombre = nombre;
@@ -59,9 +64,9 @@ public class Animal {
     public String toString() {
         return "{" +
             " nombre='" + nombre + "'" +
-            ", subespecie='" + subespecie + "'" +
-            ", tamano='" + tamano + "'" +
-            ", peso='" + peso + "'" +
+            "\n  subespecie='" + subespecie + "'" +
+            "\n  tamano='" + tamano + "'" +
+            "\n  peso='" + peso + "'" +
             "}";
     }
 

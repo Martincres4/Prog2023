@@ -37,7 +37,7 @@ public class Coche {
         this.marca = marca;
     }
 
-    public float getPeso() {
+    public double getPeso() {
         return this.peso;
     }
 
@@ -45,7 +45,7 @@ public class Coche {
         this.peso = peso;
     }
 
-    public float getPrecio() {
+    public double getPrecio() {
         return this.precio;
     }
 
