@@ -59,8 +59,10 @@ favorite_languages['sarah'].title() +".")
 
 """6-1. Person: Use a dictionary to store information about a person you know.
 Store their first name, last name, age, and the city in which they live. You 
-should have keys such as first_name, last_name, age, and city. Print each 
+Çhould have keys such as first_name, last_name, age, and city. Print each 
 piece of information stored in your dictionary."""
+
+
 
 
 """6-2. Favorite Numbers: Use a dictionary to store people’s favorite numbers.
@@ -119,7 +121,7 @@ for name in favorite_languages.keys():
 
 
 for name in sorted(favorite_languages.keys()):
- print(name.title() + ", thank you for taking the poll.")
+    print(name.title() + ", thank you for taking the poll.")
 
 
 
