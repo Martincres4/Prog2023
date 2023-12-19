@@ -1,13 +1,13 @@
-/*-Brujo  (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida) y el método hechizoOscuro */
-package masEjerClases2;
+/*-Druida  (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida) y el método hechizoNaturaleza */
+package masEjClases2;
 
-public class Brujo {
+public class Druida {
     private String fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, vida;
 
-    public Brujo() {
+    public Druida() {
     }
 
-    public Brujo(String fuerza, String destreza, String constitucion, String inteligencia, String sabiduria,
+    public Druida(String fuerza, String destreza, String constitucion, String inteligencia, String sabiduria,
             String carisma, String vida) {
         this.fuerza = fuerza;
         this.destreza = destreza;
@@ -31,8 +31,8 @@ public class Brujo {
                 "}";
     }
 
-    public static void hechizoOscuro() {
-        System.out.println("pum");
+    public static void hechizoNaturaleza() {
+        System.out.println("fuap");
     }
     
 }

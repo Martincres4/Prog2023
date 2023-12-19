@@ -1,13 +1,13 @@
-/*-Explorador (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida) y el método pegar, pegarDistancia */
-package masEjerClases2;
+/*-Hechicero  (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida) y el método hechizoCaotico */
+package masEjClases2;
 
-public class Explorador {
+public class Hechicero {
     private String fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, vida;
 
-    public Explorador() {
+    public Hechicero() {
     }
 
-    public Explorador(String fuerza, String destreza, String constitucion, String inteligencia, String sabiduria,
+    public Hechicero(String fuerza, String destreza, String constitucion, String inteligencia, String sabiduria,
             String carisma, String vida) {
         this.fuerza = fuerza;
         this.destreza = destreza;
@@ -31,11 +31,7 @@ public class Explorador {
                 "}";
     }
 
-    public static void pegar() {
+    public static void hechizoCaotico() {
         System.out.println("fuap");
-    }
-    
-    public static void pegarDistancia() {
-        System.out.println("fuap");
-    }
+    }    
 }

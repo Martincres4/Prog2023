@@ -1,14 +1,14 @@
-/*-Monje (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida) y el método pegar */
-package masEjerClases2;
+/*-Clerigo (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida, dios) y el método pegar, rezar, regañar */
+package masEjClases2;
 
-public class Monje {
-    private String fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, vida;
+public class Clerigo {
+    private String fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, vida, dios;
 
-    public Monje() {
+    public Clerigo() {
     }
 
-    public Monje(String fuerza, String destreza, String constitucion, String inteligencia, String sabiduria,
-            String carisma, String vida) {
+    public Clerigo(String fuerza, String destreza, String constitucion, String inteligencia, String sabiduria,
+            String carisma, String vida, String dios) {
         this.fuerza = fuerza;
         this.destreza = destreza;
         this.constitucion = constitucion;
@@ -16,6 +16,7 @@ public class Monje {
         this.sabiduria = sabiduria;
         this.carisma = carisma;
         this.vida = vida;
+        this.dios = dios;
     }
 
     @Override
@@ -28,10 +29,21 @@ public class Monje {
                 ", sabiduria='" + sabiduria + "'" +
                 ", carisma='" + carisma + "'" +
                 ", vida='" + vida + "'" +
+                ", dios='" + dios + "'" +
                 "}";
     }
 
     public static void pegar() {
-        System.out.println("fuap");
-    }  
+        System.out.println("zas");
+    }
+    
+    public static void rezar() {
+        System.out.println("mhh");
+    }
+
+    public static void enganar() {
+        System.out.println("no");
+    }
+    
+    
 }

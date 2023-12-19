@@ -1,6 +1,6 @@
 /*-Picaro (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida, suerte) y el metodo pegar, robar, abrirPuertas, envenenar.
  */
-package masEjerClases2;
+package masEjClases2;
 
 public class Picaro {
     private String fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, vida, suerte;

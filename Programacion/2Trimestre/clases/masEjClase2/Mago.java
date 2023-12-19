@@ -1,14 +1,14 @@
-/*-Barbaro (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida, daño) y el método pegar */
-package masEjerClases2;
+/*-Mago (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida, libro de hechizos) y el método magiaAbjuración */
+package masEjClases2;
 
-public class Barbaro {
-    private String fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, vida, dano;
+public class Mago {
+    private String fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, vida, libroDeHechizos;
 
-    public Barbaro() {
+    public Mago() {
     }
 
-    public Barbaro(String fuerza, String destreza, String constitucion, String inteligencia, String sabiduria,
-            String carisma, String vida, String dano) {
+    public Mago(String fuerza, String destreza, String constitucion, String inteligencia, String sabiduria,
+            String carisma, String vida, String libroDeHechizos) {
         this.fuerza = fuerza;
         this.destreza = destreza;
         this.constitucion = constitucion;
@@ -16,7 +16,7 @@ public class Barbaro {
         this.sabiduria = sabiduria;
         this.carisma = carisma;
         this.vida = vida;
-        this.dano = dano;
+        this.libroDeHechizos = libroDeHechizos;
     }
 
     @Override
@@ -29,11 +29,12 @@ public class Barbaro {
                 ", sabiduria='" + sabiduria + "'" +
                 ", carisma='" + carisma + "'" +
                 ", vida='" + vida + "'" +
-                ", dano='" + dano + "'" +
+                ", libroDeHechizos='" + libroDeHechizos + "'" +
                 "}";
     }
 
-    public static void pegar() {
-        System.out.println("pium");
-    }
+    public static void magiaAbjuración() {
+        System.out.println("fuap");
+    }    
+    
 }

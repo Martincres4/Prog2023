@@ -1,13 +1,13 @@
-/*-Hechicero  (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida) y el método hechizoCaotico */
-package masEjerClases2;
+/*-Guerrero (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida) y el método pegar, ordenCombate */
+package masEjClases2;
 
-public class Hechicero {
+public class Guerrero {
     private String fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, vida;
 
-    public Hechicero() {
+    public Guerrero() {
     }
 
-    public Hechicero(String fuerza, String destreza, String constitucion, String inteligencia, String sabiduria,
+    public Guerrero(String fuerza, String destreza, String constitucion, String inteligencia, String sabiduria,
             String carisma, String vida) {
         this.fuerza = fuerza;
         this.destreza = destreza;
@@ -31,7 +31,11 @@ public class Hechicero {
                 "}";
     }
 
-    public static void hechizoCaotico() {
+    public static void pegar() {
         System.out.println("fuap");
-    }    
+    }
+    
+    public static void ordenCombate() {
+        System.out.println("fuap");
+    }
 }

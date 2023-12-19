@@ -1,14 +1,14 @@
-/*-Paladin (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida, dios) y el método pegar, rezar, ordenAbsoluta */
-package masEjerClases2;
+/*-Explorador (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida) y el método pegar, pegarDistancia */
+package masEjClases2;
 
-public class Paladin {
-    private String fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, vida, dios;
+public class Explorador {
+    private String fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, vida;
 
-    public Paladin() {
+    public Explorador() {
     }
 
-    public Paladin(String fuerza, String destreza, String constitucion, String inteligencia, String sabiduria,
-            String carisma, String vida, String dios) {
+    public Explorador(String fuerza, String destreza, String constitucion, String inteligencia, String sabiduria,
+            String carisma, String vida) {
         this.fuerza = fuerza;
         this.destreza = destreza;
         this.constitucion = constitucion;
@@ -16,7 +16,6 @@ public class Paladin {
         this.sabiduria = sabiduria;
         this.carisma = carisma;
         this.vida = vida;
-        this.dios = dios;
     }
 
     @Override
@@ -29,20 +28,14 @@ public class Paladin {
                 ", sabiduria='" + sabiduria + "'" +
                 ", carisma='" + carisma + "'" +
                 ", vida='" + vida + "'" +
-                ", dios='" + dios + "'" +
                 "}";
     }
 
     public static void pegar() {
         System.out.println("fuap");
-    }  
-
-    public static void rezar() {
-        System.out.println("fuap");
-    }  
-
-    public static void ordenAbsoluta() {
-        System.out.println("fuap");
-    }  
+    }
     
+    public static void pegarDistancia() {
+        System.out.println("fuap");
+    }
 }

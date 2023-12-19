@@ -1,13 +1,13 @@
-/*-Bardo  (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida) y el método curar, pegar, canto  */
-package masEjerClases2;
+/*-Monje (Fuerza,Destreza,Constitución, Inteligencia, Sabiduria, Carisma, vida) y el método pegar */
+package masEjClases2;
 
-public class Bardo {
+public class Monje {
     private String fuerza, destreza, constitucion, inteligencia, sabiduria, carisma, vida;
 
-    public Bardo() {
+    public Monje() {
     }
 
-    public Bardo(String fuerza, String destreza, String constitucion, String inteligencia, String sabiduria,
+    public Monje(String fuerza, String destreza, String constitucion, String inteligencia, String sabiduria,
             String carisma, String vida) {
         this.fuerza = fuerza;
         this.destreza = destreza;
@@ -31,16 +31,7 @@ public class Bardo {
                 "}";
     }
 
-    public static void curar() {
-        System.out.println("fiuuuu");
-    }
-
     public static void pegar() {
-        System.out.println("pium");
-    }
-
-    public static void canto() {
-        System.out.println("ole");
-    }
-    
+        System.out.println("fuap");
+    }  
 }
