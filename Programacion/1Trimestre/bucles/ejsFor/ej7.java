@@ -1,7 +1,7 @@
 /*Escribir un programa que pida al usuario una palabra y luego muestre 
 por pantalla una a una las letras de la palabra introducida empezando 
 por la última */
-package bucles.ejsFor;
+//package bucles.ejsFor;
 import java.util.Scanner;
 public class ej7 {
     public static void main(String[] args) {

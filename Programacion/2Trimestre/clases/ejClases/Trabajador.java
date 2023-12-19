@@ -1,3 +1,4 @@
+package ejClases;
 //Crear la clase trabajador que tiene los siguientes atributos: nombre, puesto de trabajo, departamento(solo existe el departamento de informatica y recursos humanos), sueldo(ha de ser positivo), nombreJefe
 public class Trabajador {
     private String nombre, puestoDeTrabajo, depart, nombreJefe;

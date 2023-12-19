@@ -1,3 +1,4 @@
+package ejClases;
 //Crear la clase persona que tiene los siguientes atributos: nombre, apellidos, edad, localizacion, codigo postal, dni
 public class Persona{
     private String nombre2, apellido1, apellido2, localizacion, dni;

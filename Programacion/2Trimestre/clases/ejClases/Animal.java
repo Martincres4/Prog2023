@@ -1,3 +1,4 @@
+package ejClases;
 //Crear la clase animal que tiene los siguientes atributos: nombre,tamaño, peso, subespecie y tiene como método comer,reproduccion y matar.
 public class Animal {
     private String nombre, subespecie;

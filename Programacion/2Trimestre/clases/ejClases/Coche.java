@@ -1,3 +1,4 @@
+package ejClases;
 //Crear la clase Coche que tiene los siguientes atributos: nombre, modelo, marca, peso, precio. Crear 3 objetos con diferentes valores y mostrarlos por pantalla.
 public class Coche {
     private String nombre, modelo, marca;
