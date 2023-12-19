@@ -18,6 +18,62 @@ public class Bardo {
         this.vida = vida;
     }
 
+    public String getFuerza() {
+        return this.fuerza;
+    }
+
+    public void setFuerza(String fuerza) {
+        this.fuerza = fuerza;
+    }
+
+    public String getDestreza() {
+        return this.destreza;
+    }
+
+    public void setDestreza(String destreza) {
+        this.destreza = destreza;
+    }
+
+    public String getConstitucion() {
+        return this.constitucion;
+    }
+
+    public void setConstitucion(String constitucion) {
+        this.constitucion = constitucion;
+    }
+
+    public String getInteligencia() {
+        return this.inteligencia;
+    }
+
+    public void setInteligencia(String inteligencia) {
+        this.inteligencia = inteligencia;
+    }
+
+    public String getSabiduria() {
+        return this.sabiduria;
+    }
+
+    public void setSabiduria(String sabiduria) {
+        this.sabiduria = sabiduria;
+    }
+
+    public String getCarisma() {
+        return this.carisma;
+    }
+
+    public void setCarisma(String carisma) {
+        this.carisma = carisma;
+    }
+
+    public String getVida() {
+        return this.vida;
+    }
+
+    public void setVida(String vida) {
+        this.vida = vida;
+    }
+
     @Override
     public String toString() {
         return "{" +
@@ -32,15 +88,15 @@ public class Bardo {
     }
 
     public static void curar() {
-        System.out.println("fiuuuu");
+        System.out.println("Bardo cura");
     }
 
     public static void pegar() {
-        System.out.println("pium");
+        System.out.println("Bardo pega");
     }
 
     public static void canto() {
-        System.out.println("ole");
+        System.out.println("Bardo canta");
     }
-    
+
 }
