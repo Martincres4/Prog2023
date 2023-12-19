@@ -61,7 +61,16 @@ favorite_languages['sarah'].title() +".")
 Store their first name, last name, age, and the city in which they live. You 
 Çhould have keys such as first_name, last_name, age, and city. Print each 
 piece of information stored in your dictionary."""
-
+info_pers = {
+ 'first_name': 'Martin',
+ 'last_name': 'Crespo',
+ 'age': '23',
+ 'city': 'Madrid',
+ }
+print("first name: " + info_pers['first_name'].title() +".")
+print("ape: " + info_pers['last_name'].title() +".")
+print("age: " + info_pers['age'].title() +".")
+print("city: " + info_pers['city'].title() +".")
 
 
 
