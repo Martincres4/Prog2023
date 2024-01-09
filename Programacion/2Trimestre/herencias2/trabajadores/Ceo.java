@@ -41,8 +41,10 @@ public class Ceo extends JefeDepartamento{
     public void cobrar(){
         System.out.println("Dame dineros");
     }
+
+    @Override
     public void informe(){
-        System.out.println("Informe pls");
+        System.out.println("Hazme el informe desde ceo.");
 
     }
 }

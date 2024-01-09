@@ -20,9 +20,10 @@ public class JefeDepartamento extends Manager{
             " nombreDep='" + nombreDep + "'" +
             "}";
     }
-
+    
+    @Override
     public void informe(){
-        System.out.println("Hazme el informe");
+        System.out.println("Hazme el informe desde el jefe del departamento.");
     }
     
 }

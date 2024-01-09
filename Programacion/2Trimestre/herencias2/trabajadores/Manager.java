@@ -23,7 +23,7 @@ public class Manager extends Trabajador{
     }
 
     public void informe(){
-        System.out.println("hacer informe");
+        System.out.println("Hacer informe desde manager");
     }
     
 }
