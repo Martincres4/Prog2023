@@ -1,5 +1,7 @@
-package Programacion.2Trimestre.herencias.seresVivos;
-
-public class Animal {
+public class Animal extends SerVivo{
+    public Animal(String nombre){
+        super(nombre);
+        
+    }
     
 }

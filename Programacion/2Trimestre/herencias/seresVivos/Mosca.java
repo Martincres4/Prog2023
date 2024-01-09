@@ -1,5 +1,16 @@
-package Programacion.2Trimestre.herencias.seresVivos;
+public class Mosca extends Insecto{
+    public Mosca(String nombre){
+        super(nombre);
 
-public class Mosca {
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+            "}";
+    } 
+    public static void Molestar(){
+        System.out.println("bssssssssssss");
+    }
     
 }

@@ -1,5 +1,13 @@
-package Programacion.2Trimestre.herencias.seresVivos;
+public class Homo extends Mamiferos{
+    public Homo(String nombre, String huesos, String especie){
+        super(especie, nombre, huesos);
 
-public class Homo {
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+            "}";
+    }
     
 }

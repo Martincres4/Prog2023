@@ -1,5 +1,13 @@
-package Programacion.2Trimestre.herencias.seresVivos;
+public class Insecto extends Invertebrados{
+    public Insecto(String nombre){
+        super(nombre);
 
-public class Insecto {
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+            "}";
+    } 
     
 }
