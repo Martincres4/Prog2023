@@ -7,12 +7,6 @@ public class Trabajador extends Persona{
         this.sueldo = sueldo;
         this.cif = cif;
     }
-    
-    
-    public Trabajador(String nombre, String apellido, int edad, String dni) {
-        super(nombre, apellido, dni, edad);
-    }
-
 
     public int getSueldo() {
         return this.sueldo;

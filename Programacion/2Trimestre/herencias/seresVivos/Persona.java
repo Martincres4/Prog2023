@@ -14,5 +14,7 @@ public class Persona extends Homo{
     public void comerPlatanos(){
         System.out.println("Que ricos los platanos");
     }
+    public class SerVivo {
+    }
     
 }

@@ -1,12 +1,8 @@
 public class Becario extends Persona{
     private int tiempoPracticas;
 
-    public Becario(String nombre, String apellido, int edad, String dni) {
-        super(dni, nombre, apellido, dni);
-    }
-
     public Becario(int tiempoPracticas, String nombre, String apellido, int edad, String dni) {
-        super(dni, nombre, apellido, dni);
+        super(apellido, dni, nombre, edad);
         this.tiempoPracticas = tiempoPracticas;
     }
 

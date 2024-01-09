@@ -1,11 +1,6 @@
 public class Persona extends SerVivo{
     private String apellido, dni;
-
-    public Persona(String nombre, int edad){
-        super(nombre, edad);
-
-    }
-
+    
     public Persona(String apellido, String dni, String nombre, int edad) {
         super(nombre, edad);
         this.apellido = apellido;
